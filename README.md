@@ -1,12 +1,18 @@
 # Nombre del Proyecto
+Farmacia 
 
 ## Integrantes
 Maria Fernanda Cadavid Cano
 
+
 ## Descripción
+Nuestro proyecto es el desarrollo de una API de farmacias la cual facilite la compra y obtencion de medicamentos para toodas las personas desde la comodidad  de sus hogares.
 Descripción del proyecto y su propósito.
 
 ## Características
+- Tienda online para comprar medicamentos con domicilio
+- IA interactiva para atención al cliente
+
 - Lista de funcionalidades principales
 - Tecnologías utilizadas
 
@@ -50,7 +56,7 @@ Descripción del proyecto y su propósito.
 ## Contacto
 ### Información del Grupo
 - **Institución**: SENA
-- **Programa**: [Nombre del programa]
-- **Ficha**: [Número de ficha]
-- **Instructor**: [Nombre del instructor]
-- **Período**: [Año - Trimestre]
+- **Programa**: [ADSO]
+- **Ficha**: [3144585]
+- **Instructor**: [John Freddy]
+- **Período**: [2025 - 3er Trimestre]
