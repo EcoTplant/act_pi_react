@@ -3,6 +3,7 @@ Farmacia
 
 ## Integrantes
 Maria Fernanda Cadavid Cano
+Juan Esteban Henao Echavarria
 
 
 ## Descripción
@@ -20,10 +21,10 @@ Descripción del proyecto y su propósito.
 **Nota**: Todos los avances documentados en esta sección deben coincidir con los commits realizados en el repositorio, incluyendo el autor correspondiente de cada commit. Cada tarea completada, en progreso o pendiente debe estar respaldada por un commit asociado en el repositorio, con mensajes descriptivos que reflejen la tarea realizada y el nombre del autor.
 
 ### Clase 1
-- **Fecha**: [DD/MM/YYYY]
+- **Fecha**: [27/08/2025]
 - **Objetivos**:
-  - [Objetivo 1]
-  - [Objetivo 2]
+  - [llenar documentacion en el archivo README.md]
+  - [Crear una interface de usuario]
 - **Avances**:
   - ✅ [Tarea completada 1] - Responsable: [Nombre] - Commit: [Hash o descripción del commit]
   - ✅ [Tarea completada 2] - Responsable: [Nombre] - Commit: [Hash o descripción del commit]
