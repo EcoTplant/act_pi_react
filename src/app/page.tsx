@@ -1,7 +1,14 @@
+import React from "react";
+
 export default function Page() {
   return (
     <div>
-      <h1>Pagina de inicio de sesion</h1>
+      <h1>Página de inicio</h1>
+
+      <div>
+        <button className="sesion">Iniciar Sesión</button>
+        <button className="register">Registrarse</button>
+      </div>
     </div>
   );
 }
