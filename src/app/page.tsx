@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import App from "./app/App";
 
+
 export default function Page() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -16,16 +17,18 @@ export default function Page() {
     return <App />;
   }
 
-  return (
-    <div>
-      <h1>Página de inicio</h1>
-      <div>
-        <Link href="/login">
-          <button className="sesion">Iniciar Sesión</button>
-        </Link>
-        <Link href="/register">
-          <button className="register">Registrarse</button>
-        </Link>
+ return (
+    <div className="home-container">
+      <div className="home-content">
+        <h1 className="home-title">Página de inicio</h1>
+        <div className="home-buttons">
+          <Link href="/login">
+            <button className="home-button session">Iniciar Sesión</button>
+          </Link>
+          <Link href="/register">
+            <button className="home-button register">Registrarse</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
