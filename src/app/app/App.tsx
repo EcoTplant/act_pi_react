@@ -1,6 +1,11 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import './App.css';
-import { Helmet } from 'react-helmet'
+import Head from 'next/head';
+import ItemCard from '../componentes/ItemCard';
+import SectionHeading from '../componentes/SectionHeading';
+import CategoryCard from '../componentes/CategoryCard';
+import BlogPostCard from '../componentes/BlogPostCard';
+
 
 export default function App() {
   const handleLogout = () => {
@@ -12,10 +17,10 @@ export default function App() {
 
   return (
     <div className="home-container10">
-      <Helmet>
+      <Head>
         <title>Mediclick</title>
         <meta property="og:title" content="Mediclcick" />
-      </Helmet>
+      </Head>
       <div className="home-navbar1">
         <header data-role="Header" className="home-header max-width-container">
           <div className="home-navbar2">
