@@ -91,26 +91,10 @@
   display: flex;
 }
  
-.home-image2 {
-  width: 24px;
-  height: 24px;
-  margin: 0 24px 0 0;
-  position: relative;
-  box-sizing: border-box;
-  object-fit: cover;
-  border-color: transparent;
-}
- 
-.home-image3 {
-  width: 24px;
-  height: 24px;
-  margin: 0 24px 0 0;
-  position: relative;
-  box-sizing: border-box;
-  object-fit: cover;
-  border-color: transparent;
-}
- 
+
+.home-image1,
+.home-image2,
+.home-image3,
 .home-image4 {
   width: 24px;
   height: 24px;
@@ -119,6 +103,7 @@
   object-fit: cover;
   border-color: transparent;
 }
+
  
 .home-burger-menu {
   display: none;
@@ -378,9 +363,9 @@
 .home-image6 {
   width: 100%;
   position: relative;
-  max-width: 579px;
+  max-width: 360px; /* reduced max width for smaller images */
   box-sizing: border-box;
-  max-height: 579px;
+  max-height: 360px; /* reduced max height */
   object-fit: cover;
   border-color: transparent;
 }
@@ -502,10 +487,163 @@
  
 .home-svg {
   top: -30px;
-  width: 199px;
-  height: 200px;
+  width: 120px; /* smaller decorative svg */
+  height: 120px;
   position: absolute;
 }
+
+/* Generic image sizing for gallery and cards to keep images small and consistent */
+.home-gallery img,
+.home-cards-container img,
+.home-container15 img {
+  width: 100%;
+  max-width: 280px; /* small image size */
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Smaller thumbnails / icons */
+.home-image1,
+.home-image2,
+.home-image3,
+.home-image4,
+.home-icon10,
+.home-icon12,
+.home-icon14,
+.home-icon16,
+.home-icon18 {
+  max-width: 28px;
+  max-height: 28px;
+  width: auto;
+  height: auto;
+}
+
+/* Responsive tweaks: make images even smaller on small screens */
+@media (max-width: 767px) {
+  .home-image6 {
+    max-width: 260px;
+    max-height: 260px;
+  }
+  .home-gallery img,
+  .home-cards-container img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 479px) {
+  .home-image6 {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  .home-gallery img,
+  .home-cards-container img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
+
+/* -----------------------------
+   Cards & component layout
+   Ensure images and text inside card components don't overlap
+   ----------------------------- */
+
+/* Base card layout used by ItemCard, CategoryCard, BlogPostCard */
+.rootClassName4,
+.rootClassName2,
+.rootClassName3,
+.item-cardroot-class-name1,
+.item-cardroot-class-name6,
+.blog-post-cardroot-class-name {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+/* Make sure any img inside card components sits above text and doesn't get covered */
+.rootClassName4 img,
+.rootClassName2 img,
+.rootClassName3 img,
+.item-cardroot-class-name1 img,
+.item-cardroot-class-name6 img,
+.blog-post-cardroot-class-name img,
+.home-cards-container img,
+.home-gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain; /* prevent cropping important parts */
+  display: block;
+}
+
+/* Ensure text blocks inside cards have their own spacing and readable layout */
+.rootClassName4 h3,
+.rootClassName2 h3,
+.rootClassName3 h3,
+.item-cardroot-class-name1 h3,
+.item-cardroot-class-name6 h3,
+.blog-post-cardroot-class-name h3,
+.rootClassName4 p,
+.rootClassName2 p,
+.rootClassName3 p,
+.item-cardroot-class-name1 p,
+.item-cardroot-class-name6 p,
+.blog-post-cardroot-class-name p {
+  margin: 0;
+  padding: 6px 4px;
+  line-height: 1.2;
+}
+
+/* Small visual polish: rounded images in galleries/cards */
+.home-cards-container img,
+.home-gallery img {
+  border-radius: 6px;
+}
+
+/* Prevent overflow from images inside gallery columns */
+.home-left2 img,
+.home-left3 img,
+.home-right3 img,
+.home-left4 img,
+.home-right4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Generic card wrappers inside cards container and gallery */
+.home-cards-container > div,
+.home-gallery > div,
+.home-gallery .home-left2 > div,
+.home-gallery .home-right2 > div,
+.home-gallery .home-left3 > div,
+.home-gallery .home-right3 > div,
+.home-gallery .home-left4 > div,
+.home-gallery .home-right4 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 8px 6px;
+  background: transparent;
+}
+
+/* Make text readable when it sits near images */
+.home-cards-container > div h3,
+.home-cards-container > div p,
+.home-gallery > div h3,
+.home-gallery > div p,
+.home-gallery div h3,
+.home-gallery div p {
+  background: rgba(255,255,255,0.92);
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
  
 .home-gallery {
   width: 100%;
