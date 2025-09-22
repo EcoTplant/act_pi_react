@@ -324,12 +324,12 @@ export default function App() {
                 rootClassName="blog-post-cardroot-class-name"
               ></BlogPostCard>
               <BlogPostCard
-                title="Unique natural color combinations"
+                title="Omeprazol"
                 newProp="Todo sobre el Omeprazol: Usos, dosis y mitos"
                 imageSrc="https://img.freepik.com/vector-premium/mujer-apuntando-arriba-bombilla-encendida-arriba-persona-tiene-idea-aislado-sobre-fondo-blanco_737577-21.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
               ></BlogPostCard>
               <BlogPostCard
-                title="Special combinations for nature lovers"
+                title="Botiquín de Primeros Auxilios en Casa"
                 newProp="Cómo Crear un Botiquín de Primeros Auxilios en Casa"
                 subtitle="Las preguntas mas frecuentes de nuestros clientes."
                 imageSrc="https://centraldesuministrosgs.com/wp-content/uploads/2024/01/BOTIQUIN-MALETIN.png"
