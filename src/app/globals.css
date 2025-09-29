@@ -72,4 +72,6 @@ html, body {
 .home-button.register:hover {
   background-color: #27ae60;
   transform: translateY(-3px);
+
 }
+
