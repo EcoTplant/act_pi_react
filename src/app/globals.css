@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -75,3 +76,80 @@ html, body {
 
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para la página de inicio (home) específicamente */
+.home-container {
+  background: linear-gradient(rgba(12, 12, 12, 0.7), rgba(36, 8, 37, 0.7)), 
+              url('img/farmachia.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.616); /* Blanco muy transparente */  
+  padding: 60px 90px;      /* Más alto (arriba y abajo) y más ancho (izq/der) */
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;        /* Puedes ajustar el ancho si lo deseas */
+  width: 100%;
+  min-height: 100px;       /* Hace la caja más alta */
+}
+
+.home-title {
+  color: #0D1B2A;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.home-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  font-weight: bold;
+}
+
+.home-button.session {
+  background-color: #0077B6;
+  color: white;
+}
+
+.home-button.session:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.home-button.register {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.home-button.register:hover {
+  background-color: #27ae60;
+  transform: translateY(-3px);
+}

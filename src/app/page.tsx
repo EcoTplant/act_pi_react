@@ -20,7 +20,7 @@ export default function Page() {
  return (
     <div className="home-container">
       <div className="home-content">
-        <h1 className="home-title">Página de inicio</h1>
+        <h1 className="home-title">¡Bienvenido a MediClick!</h1>
         <div className="home-buttons">
           <Link href="/login">
             <button className="home-button session">Iniciar Sesión</button>
