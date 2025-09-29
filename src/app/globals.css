@@ -11,8 +11,8 @@ html, body {
 
 /* Estilos para la página de inicio (home) específicamente */
 .home-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-              url('img/doc.png') no-repeat center center fixed;
+  background: linear-gradient(rgba(12, 12, 12, 0.7), rgba(36, 8, 37, 0.7)), 
+              url('img/farmachia.webp') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -22,18 +22,19 @@ html, body {
 
 .home-content {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.616); /* Blanco muy transparente */  
+  padding: 60px 90px;      /* Más alto (arriba y abajo) y más ancho (izq/der) */
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-  max-width: 500px;
-  width: 80%;
+  max-width: 400px;        /* Puedes ajustar el ancho si lo deseas */
+  width: 100%;
+  min-height: 100px;       /* Hace la caja más alta */
 }
 
 .home-title {
-  color: #2c3e50;
+  color: #0D1B2A;
   margin-bottom: 30px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .home-buttons {
@@ -55,7 +56,7 @@ html, body {
 }
 
 .home-button.session {
-  background-color: #3498db;
+  background-color: #0077B6;
   color: white;
 }
 
