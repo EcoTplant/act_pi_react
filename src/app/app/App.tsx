@@ -24,20 +24,21 @@ export default function App() {
       <div className="home-navbar1">
         <header data-role="Header" className="home-header max-width-container">
           <div className="home-navbar2">
-            <div className="home-container11">
-              <img
-                alt="search3271286"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgMCAyNCAyNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBjbGlwLXJ1bGU9J2V2ZW5vZGQnIGQ9J00xOC4zMTkgMTQuNDMyNkMyMC43NjI4IDExLjI5NDEgMjAuNTQyIDYuNzUzNDQgMTcuNjU2OSAzLjg2ODI2QzE0LjUzMjcgMC43NDQwNjcgOS40NjczNCAwLjc0NDA2NyA2LjM0MzE1IDMuODY4MjZDMy4yMTg5NSA2Ljk5MjQ2IDMuMjE4OTUgMTIuMDU3OCA2LjM0MzE1IDE1LjE4MkM5LjIyODMzIDE4LjA2NzIgMTMuNzY5IDE4LjI4NzkgMTYuOTA3NSAxNS44NDQyQzE2LjkyMSAxNS44NTk0IDE2LjkzNTEgMTUuODc0NCAxNi45NDk3IDE1Ljg4OTFMMjEuMTkyNCAyMC4xMzE3QzIxLjU4MjkgMjAuNTIyMiAyMi4yMTYxIDIwLjUyMjIgMjIuNjA2NiAyMC4xMzE3QzIyLjk5NzEgMTkuNzQxMiAyMi45OTcxIDE5LjEwOCAyMi42MDY2IDE4LjcxNzVMMTguMzY0IDE0LjQ3NDlDMTguMzQ5MyAxNC40NjAyIDE4LjMzNDMgMTQuNDQ2MSAxOC4zMTkgMTQuNDMyNlpNMTYuMjQyNiA1LjI4MjQ4QzE4LjU4NTggNy42MjU2MiAxOC41ODU4IDExLjQyNDYgMTYuMjQyNiAxMy43Njc4QzEzLjg5OTUgMTYuMTEwOSAxMC4xMDA1IDE2LjExMDkgNy43NTczNiAxMy43Njc4QzUuNDE0MjEgMTEuNDI0NiA1LjQxNDIxIDcuNjI1NjIgNy43NTczNiA1LjI4MjQ4QzEwLjEwMDUgMi45MzkzMyAxMy44OTk1IDIuOTM5MzMgMTYuMjQyNiA1LjI4MjQ4WicgZmlsbD0nYmxhY2snLz4KPC9zdmc+Cg=="
-                className="home-image1"
-              />
-              <input
-                type="text"
-                placeholder="buscar"
-                className="home-textinput input"
-              />
-            </div>
+            <button onClick={handleLogout} className="logout-button">Volver a la página de inicio de sesion  </button>
+           <div className="home-container11">
+  <div className="search-container">
+  <span className="search-icon">🔍</span>
+  <input
+    type="text"
+    placeholder="buscar"
+    className="home-textinput input"
+  />
+
+   
+  </div>
+</div>
             <div className="home-middle1">
-              <div className="home-left1">
+        <div className="home-left1">
                 <span className="navbar-link">TIENDA</span>
                 <span className="navbar-link">ESPECIAL</span>
               </div>
@@ -230,7 +231,7 @@ export default function App() {
             <div className="home-container17">
               <span className="home-text37">
                 <span>
-                  En MediClick nacemos con una misión clara: revolucionar la
+                 <br></br> En MediClick nacemos con una misión clara: revolucionar la
                   forma en que cuidas de tu bienestar y el de tu familia. Somos
                   mucho más que una farmacia online; somos tu partner de
                   confianza en salud, ofreciéndote un acceso seguro, rápido y
@@ -261,53 +262,36 @@ export default function App() {
               subtitle="Explore los medicamentos mas comprados durante este mes."
             ></SectionHeading>
             <div className="home-gallery">
-              <div className="home-left2">
-                <ItemCard
-                  name="Ibuprofeno"
-                  value="5"
-                  imageSrc="https://calox.com/wp-content/uploads/2022/12/Ibuprofeno-400.png"
-                  rootClassName="rootClassName4"
-                ></ItemCard>
-              </div>
-              <div className="home-right2">
-                <div className="home-top">
-                  <div className="home-left3">
-                    <ItemCard
-                      name="Naproxeno"
-                      value="3"
-                      imageSrc="https://cdn.eurofarma.com.br/wp-content/uploads/2016/10/Naproxeno.png"
-                      rootClassName="rootClassName2"
-                    ></ItemCard>
-                  </div>
-                  <div className="home-right3">
-                    <ItemCard
-                      name="Difenhidramina"
-                      value="5"
-                      imageSrc="https://www.medipanpanama.com/wp-content/uploads/2021/06/DIFENHIDRAMINA-MP-COMP-PRODUCTO.png"
-                      rootClassName="rootClassName3"
-                    ></ItemCard>
-                  </div>
-                </div>
-                <div className="home-bottom">
-                  <div className="home-left4">
-                    <ItemCard
-                      name="Aspirina"
-                      value="7"
-                      imageSrc="https://www.aspirina.com.mx/sites/g/files/vrxlpx53376/files/2024-05/Aspirina_tabletas_500_mg_empaque_lateral_derecho.png"
-                      rootClassName="item-cardroot-class-name1"
-                    ></ItemCard>
-                  </div>
-                  <div className="home-right4">
-                    <ItemCard
-                      name="Amoxicilina"
-                      value="10"
-                      imageSrc="https://www.lasanteca.com/userfiles/2018/12/AMOXICILINA-500MG-CAJA-POR-50-CAPSULAS-CON-BLISTER.jpg"
-                      rootClassName="item-cardroot-class-name6"
-                    ></ItemCard>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <ItemCard
+    name="Ibuprofeno"
+    value="5"
+    imageSrc="https://calox.com/wp-content/uploads/2022/12/Ibuprofeno-400.png"
+  />
+  <ItemCard
+    name="Naproxeno"
+    value="3"
+    imageSrc="https://cdn.eurofarma.com.br/wp-content/uploads/2016/10/Naproxeno.png"
+  />
+  <ItemCard
+    name="Difenhidramina"
+    value="5"
+    imageSrc="https://www.medipanpanama.com/wp-content/uploads/2021/06/DIFENHIDRAMINA-MP-COMP-PRODUCTO.png"
+  />
+  <ItemCard
+    name="Aspirina"
+    value="7"
+    imageSrc="https://www.aspirina.com.mx/sites/g/files/vrxlpx53376/files/2024-05/Aspirina_tabletas_500_mg_empaque_lateral_derecho.png"
+  />
+  <ItemCard
+    name="Amoxicilina"
+    value="10"
+    imageSrc="https://www.lasanteca.com/userfiles/2018/12/AMOXICILINA-500MG-CAJA-POR-50-CAPSULAS-CON-BLISTER.jpg"
+  />
+</div>
+                  
+                
+              
+          
           </div>
         </div>
         <div className="section-container">
@@ -317,24 +301,23 @@ export default function App() {
               subtitle="Lea acerca de las preguntas mas comunes."
               rootClassName="section-headingroot-class-name"
             ></SectionHeading>
-            <div className="home-container18">
-              <BlogPostCard
-                newProp="¿Paracetamol o Ibuprofeno? Guía para elegir el adecuado"
-                imageSrc="https://png.pngtree.com/png-vector/20240615/ourmid/pngtree-confused-girl-thinking-vector-png-image_12749274.png"
-                rootClassName="blog-post-cardroot-class-name"
-              ></BlogPostCard>
-              <BlogPostCard
-                title="Omeprazol"
-                newProp="Todo sobre el Omeprazol: Usos, dosis y mitos"
-                imageSrc="https://img.freepik.com/vector-premium/mujer-apuntando-arriba-bombilla-encendida-arriba-persona-tiene-idea-aislado-sobre-fondo-blanco_737577-21.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
-              ></BlogPostCard>
-              <BlogPostCard
-                title="Botiquín de Primeros Auxilios en Casa"
-                newProp="Cómo Crear un Botiquín de Primeros Auxilios en Casa"
-                subtitle="Las preguntas mas frecuentes de nuestros clientes."
-                imageSrc="https://centraldesuministrosgs.com/wp-content/uploads/2024/01/BOTIQUIN-MALETIN.png"
-              ></BlogPostCard>
-            </div>
+           <div className="home-container18">
+  <BlogPostCard
+    newProp="¿Paracetamol o Ibuprofeno? Guía para elegir el adecuado"
+    imageSrc="https://png.pngtree.com/png-vector/20240615/ourmid/pngtree-confused-girl-thinking-vector-png-image_12749274.png"
+  />
+  <BlogPostCard
+    title="Omeprazol"
+    newProp="Todo sobre el Omeprazol: Usos, dosis y mitos"
+    imageSrc="https://img.freepik.com/vector-premium/mujer-apuntando-arriba-bombilla-encendida-arriba-persona-tiene-idea-aislado-sobre-fondo-blanco_737577-21.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
+  />
+  <BlogPostCard
+    title="Botiquín de Primeros Auxilios en Casa"
+    newProp="Cómo Crear un Botiquín de Primeros Auxilios en Casa"
+    subtitle="Las preguntas mas frecuentes de nuestros clientes."
+    imageSrc="https://centraldesuministrosgs.com/wp-content/uploads/2024/01/BOTIQUIN-MALETIN.png"
+  />
+</div>
           </div>
         </div>
       </div>
@@ -377,7 +360,7 @@ export default function App() {
                 <span className="home-text62">Envios</span>  
               </div>
             </div>
-            <button onClick={handleLogout}>Volver a la página de inicio de sesion</button>
+            
           </footer>
         </div>
       </div>
